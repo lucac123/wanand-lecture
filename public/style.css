@@ -28,12 +28,9 @@ nav {
   padding: 40px;
 }
 
-article {
+.article-header {
   padding: 0;
   margin: 0;
-}
-
-.article-header {
   color: white;
   background-color: grey;
   width: 100%;
