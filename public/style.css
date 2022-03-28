@@ -48,9 +48,9 @@ nav {
   grid-row: 1;
   grid-column: 1;
   z-index: 1;
+  color: white;
 }
 
 h1 {
-  color: white;
   font-size: 50pt;
 }
