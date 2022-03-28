@@ -10,6 +10,7 @@ body {
 nav {
   display: flex;
   background-color: blue;
+  margin: 0;
   height: 65px;
   align-items: center;
   justify-content: space-between;
