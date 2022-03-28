@@ -40,7 +40,7 @@ article {
   color: white;
   background-color: grey;
   width: 100%;
-  position: relative;
+  /* position: relative; */
 }
 
 .article-header::before {
