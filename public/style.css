@@ -42,6 +42,7 @@ nav {
   height: 100%;
   position: absolute;
   background-image: url(images/lecture.png);
+  background-size: cover;
 }
 
 .image-full {
