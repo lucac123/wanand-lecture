@@ -30,8 +30,8 @@ nav {
 
 .article-header {
   color: white;
+  background-color: grey;
   width: 100%;
-  height: auto;
   position: relative;
 }
 
