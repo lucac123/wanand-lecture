@@ -28,10 +28,8 @@ nav {
   padding: 40px;
 }
 
-.article-header {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+.article-header::before {
+  background-image: url(images/lecture.png);
 }
 
 .image-full {
