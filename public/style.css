@@ -35,7 +35,8 @@ nav {
 
 .image-full {
   width: 100%;
-  min-width: 800px;
+  height: 620px;
+  object-fit: cover;
   filter: brightness(78%);
 }
 
