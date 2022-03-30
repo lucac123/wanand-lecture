@@ -9,17 +9,16 @@ body {
 
 nav {
   display: flex;
-  background-color: blue;
   margin: 0;
-  height: 65px;
+  height: 60px;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo-main {
-  height: 38px;
+  height: 43px;
   margin-left: 125px;
-  margin-top: ;
+  padding-top: 5px;
 }
 
 .links {
@@ -27,38 +26,63 @@ nav {
 }
 
 .nav-link {
-  padding: 40px;
-}
-
-article {
-  background-color: red;
+  padding: 0 40px 0 40px;
 }
 
 .article-header {
-  padding: 0;
-  margin: 0;
-  color: white;
-  background-color: grey;
-  width: 100%;
-  /* position: relative; */
-}
-
-.article-header::before {
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  /* background-image: url(images/lecture.png); */
-  background-size: 100% auto;
+  position: relative;
 }
 
 .image-full {
   width: 100%;
+  min-width: 800px;
   filter: brightness(78%);
 }
 
+.article-header-text {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  color: white;
+  width: 100%;
+}
+
 h1 {
-  font-size: 50pt;
+  margin: 0;
+  font-size: 58pt;
+  padding: 170px 0 110px 110px;
+}
+
+.overlay-boxes {
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+
+.overlay-box-small {
+  background-color: grey;
+  display: inline-block;
+  width: 430px;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.overlay-box-dark {
+  background-color: #323135f0;
+}
+
+.overlay-box-light {
+  background-color: #5f5d63f0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 35pt;
+}
+
+p {
+  margin: 3px 0;
+  font-size: 14pt;
+  font-weight: bold;
 }
