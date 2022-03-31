@@ -142,6 +142,11 @@ h6 {
 
 #review-header {
   padding-right: 25px;
+  bottom: 0;
+}
+
+#about-header {
+  top: 0;
 }
 
 hr {
