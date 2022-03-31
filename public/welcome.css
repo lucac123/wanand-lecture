@@ -99,8 +99,7 @@ p {
 .article-about {
   margin-top: 120px;
   position: relative;
-  height: 59sfer0px;
-  background-color: blue;
+  height: 590px;
 }
 
 .about-left {
@@ -142,7 +141,7 @@ p {
 }
 
 .box {
-  padding: 1px 100px;
+  padding: 50px 100px;
 }
 .box-light {
   background-color: #5f5d63;
@@ -158,15 +157,15 @@ h2 {
 
 h6 {
   color: white;
-  font-size: 22pt;
+  font-size: 19pt;
   font-weight: 100;
   line-height: 30pt;
+  margin: 0;
 }
 
 #review-header {
   padding-right: 25px;
 }
-
 
 hr {
   border-top: 5px solid black;
