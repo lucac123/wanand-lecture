@@ -104,29 +104,37 @@ p {
 }
 
 .about-left {
+  position: absolute;
+  left: 0;
   width: 60%;
   height: 100%;
 }
 .about-left-top {
   position: absolute;
   top: 0;
+  left: 0;
 }
 .about-left-bottom {
   position: absolute;
   bottom: 0;
+  left: 0;
 }
 
 .about-right {
+  position: absolute;
+  right: 0;
   width: 45%;
   height: 100%;
 }
 .about-right-top {
   position: absolute;
   top: 0;
+  right: 0;
 }
 .about-right-bottom {
   position: absolute;
   bottom: 0;
+  right: 0;
 }
 
 .box {
