@@ -145,6 +145,6 @@ h6 {
 }
 
 hr {
-  border: 2px solid black;
+  border-top: 2px solid black;
   width: 70%;
 }
