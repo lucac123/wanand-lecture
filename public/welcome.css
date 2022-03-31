@@ -99,24 +99,34 @@ p {
 .article-about {
   margin-top: 120px;
   position: relative;
-  height: 520px;
+  height: 580px;
   background-color: blue;
 }
 
 .about-left {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 60%;
   height: 100%;
 }
+.about-left-top {
+  position: absolute;
+  top: 0;
+}
+.about-left-bottom {
+  position: absolute;
+  bottom: 0;
+}
 
 .about-right {
-  position: absolute;
-  right: 0;
-  bottom: 0;
   width: 45%;
   height: 100%;
+}
+.about-right-top {
+  position: absolute;
+  top: 0;
+}
+.about-right-bottom {
+  position: absolute;
+  bottom: 0;
 }
 
 .box {
@@ -143,13 +153,8 @@ h6 {
 
 #review-header {
   padding-right: 25px;
-  position: absolute;
-  bottom: 0;
 }
 
-#about-header {
-  top: 0;
-}
 
 hr {
   border-top: 5px solid black;
