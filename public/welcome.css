@@ -115,6 +115,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: auto;
 }
 .about-title {
   padding: 35px 0;
