@@ -61,7 +61,7 @@ h1 {
   white-space: nowrap;
   overflow: hidden;
 }
-#title {
+.fade-in {
 	opacity: 0;
 }
 
