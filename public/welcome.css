@@ -17,6 +17,7 @@ nav {
   margin: 0;
   height: 60px;
   align-items: center;
+	background-color: white;
   justify-content: space-between;
 }
 
@@ -39,17 +40,16 @@ nav {
 }
 
 .image-full {
-  position: absolute;
-  top: 0;
+  position: fixed;
   width: 100%;
-  height: 620px;
+  height: 680px;
+	top: 0;
+	z-index: -2;
   object-fit: cover;
   filter: brightness(78%);
 }
 
 .article-header-text {
-  position: relative;
-  z-index: 1;
   color: white;
   width: 100%;
 }
@@ -60,6 +60,9 @@ h1 {
   padding: 170px 0 110px 110px;
   white-space: nowrap;
   overflow: hidden;
+}
+#title {
+	opacity: 0;
 }
 
 .overlay-boxes {
@@ -96,10 +99,21 @@ p {
   font-weight: bold;
 }
 
+.white-space {
+	background-color: white;
+	position: relative;
+	z-index: -1;
+}
+
+#header-about {
+	margin-top: -100px;
+	height: 220px;
+}
+
 .article-about {
-  margin-top: 120px;
   display: grid;
   grid-template-columns: 55% 5% 40%;
+	background-color: white;
 }
 
 .about-left {
@@ -178,12 +192,16 @@ hr {
   margin-bottom: 40px;
 }
 
+#about-reviews {
+	height: 100px;
+}
+
 .article-reviews {
   display: grid;
-  margin-top: 100px;
   grid-template-columns: 12fr 13fr;
   gap: 80px;
   height: 820px;
+	background-color: white;
 }
 
 .reviews-right {
@@ -223,8 +241,11 @@ h4 {
   text-align: center;
 }
 
+#about-footer {
+	height: 250px;
+}
+
 footer {
   height: 80px;
   background-color: #323135;
-  margin-top: 250px;
 }
