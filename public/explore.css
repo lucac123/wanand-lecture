@@ -60,27 +60,29 @@
     margin-top: 468px;
     margin-bottom: 218;
     justify-content: center;
+    background-color: rgb(0, 0, 0);
   }
   
   .overlay-box-small {
-    background-color: grey;
     display: block;
     width: 34%;
     padding: 145px 0px 145px 0px;
     text-align: center;
-    background-image: url("public\images\lecturepicture.png");
+
   }
   
   .Lectures {
-    background-image: url("public\images\lecturepicture.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("images/lecturepicture.png");
   }
   
   .Community {
-    background-color: #5f5d63f0;
+    background: rgba(0, 0, 0, 0.38);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("images/community.png");
   }
 
   .ContactUs {
-    background-color: #12f50af0;
+    background: rgba(0, 0, 0, 0.38);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("images/contactus.png");
   }
 
   .blackbox {
@@ -98,6 +100,7 @@
     margin: 0;
     padding: 0;
     font-size: 35pt;
+    color: black;
   }
   
   p {
