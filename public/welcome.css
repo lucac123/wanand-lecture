@@ -99,7 +99,7 @@ p {
 .article-about {
   margin-top: 120px;
   position: relative;
-  height: 590px;
+  height: 620px;
 }
 
 .about-left {
@@ -141,10 +141,12 @@ p {
 }
 
 .box {
-  padding: 50px 100px;
+  padding: 70px 100px;
+  padding-right: 130px;
 }
 .box-light {
   background-color: #5f5d63;
+  padding: 60px 100px;
 }
 .box-dark {
   background-color: #323135;
@@ -157,9 +159,9 @@ h2 {
 
 h6 {
   color: white;
-  font-size: 19pt;
-  font-weight: 100;
-  line-height: 30pt;
+  font-size: 21pt;
+  font-weight: 400;
+  line-height: 32pt;
   margin: 0;
 }
 
@@ -174,4 +176,73 @@ hr {
   padding-bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.small-button {
+  display: flex;
+  background-color: #323135;
+  color: white;
+  height: 50px;
+  width: 175px;
+  padding: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  font-size: 15.5pt;
+  font-weight: 700;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+#login-button {
+  margin-bottom: 40px;
+}
+
+.article-reviews {
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: 12fr 13fr;
+  gap: 80px;
+  height: 820px;
+}
+
+.reviews-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reviews-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#reviews-left-image {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(78%);
+}
+
+#reviews-right-image {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(78%);
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 30pt;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.review {
+  text-align: center;
+}
+
+footer {
+  height: 80px;
+  background-color: #323135;
+  margin-top: 250px;
 }
