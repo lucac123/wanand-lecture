@@ -83,8 +83,8 @@
   }
   
   h3 {
-    margin: 0;
-    padding: 43px 0px 0px 30%;
+    margin-top: 89px;
+    padding: 43px 0px 0px 189px;
     font-size: 64px;
     color: rgb(0, 0, 0);
   }
@@ -92,7 +92,7 @@
   .resourcesUsed {
     margin-bottom: 158px;
     margin-top: 41px;
-    padding: 0px 0px 118px 30%;
+    padding: 0px 0px 118px 189px;
     font-size: 24px;
     color: rgb(0, 0, 0);
     height: 140px;
@@ -108,6 +108,7 @@
   }
 
   h4 {
+    margin-bottom: -25px;
     padding: 0px 0px 0px 0px;
     font-size: 30px;
     color: rgb(0, 0, 0);
