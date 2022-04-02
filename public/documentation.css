@@ -89,20 +89,44 @@
     color: rgb(0, 0, 0);
   }
 
-  h4 {
-    margin: 0;
+  .resourcesUsed {
+    margin-bottom: 158px;
+    margin-top: 41px;
     padding: 0px 0px 118px 30%;
-    font-size: 36px;
+    font-size: 24px;
     color: rgb(0, 0, 0);
+    height: 140px;
   }
 
   .blackbox {
-      margin-top: 0;
+      margin-top: 158px;
       padding: -5px 0px 0px 0px;
       height: 82px;
       width: 100%;
       background-color: rgb(32, 31, 35);
       display: inline-block;
+  }
+
+  h4 {
+    padding: 0px 0px 0px 0px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    text-align: center;
+  }
+
+  h6 {
+    margin-top: 41px;
+    padding: 0px 0px 118px 30%;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    height: 140px;
+    font-weight: 400;
+  }
+
+  .images {
+    margin-top: 82px;
+    text-align: center;
   }
 
   h5 {
