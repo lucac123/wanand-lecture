@@ -3,6 +3,11 @@
 }
 
 
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
 body{
     font-family: "Oswald", sans-serif;
     margin: 0;

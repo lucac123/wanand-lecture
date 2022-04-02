@@ -6,6 +6,11 @@
     font-family: "Oswald", sans-serif;
     margin: 0;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   
   nav {
     display: flex;
@@ -92,7 +97,7 @@
   }
 
   .blackbox {
-      margin: 0;
+      margin-top: 0;
       padding: -5px 0px 0px 0px;
       height: 82px;
       width: 100%;

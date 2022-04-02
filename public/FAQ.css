@@ -7,6 +7,11 @@
     margin: 0;
   }
   
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   nav {
     display: flex;
     margin: 0;
