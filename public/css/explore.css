@@ -1,0 +1,50 @@
+.title {
+  padding: 170px 0 0 110px;
+}
+.subtitle {
+  padding-left: 110px;
+}
+
+.boxes {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  gap: 1%;
+  background-color: white;
+}
+
+.box-small {
+  display: block;
+  width: 27%;
+  padding: 100px 0px;
+  text-align: center;
+  color: white;
+}
+
+#lectures {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),
+    url("../images/lecturepicture.png");
+  background-size: cover;
+}
+
+#community {
+  background: rgba(0, 0, 0, 0.38);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),
+    url("../images/community.png");
+  background-size: cover;
+}
+
+#contact-us {
+  background: rgba(0, 0, 0, 0.38);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),
+    url("../images/contactus.png");
+  background-size: cover;
+}
+
+#header-boxes {
+  margin-top: 300px;
+  height: 150px;
+}
+#article-footer {
+  height: 170px;
+}

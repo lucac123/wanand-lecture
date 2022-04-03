@@ -6,7 +6,12 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="explore.css"/>
+		<link rel="stylesheet" href="css/shared.css"/>
+		<link rel="stylesheet" href="css/explore.css"/>
+		<link rel="stylesheet" href="css/animations.css"/>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/explore.js"></script>
 	</head>
 	<body>
 		<nav>
@@ -15,31 +20,33 @@
 			<div class="links">
 				<a class="nav-link" href="documentation.html">DOCUMENTATION</a>
 				<a class="nav-link" href="lectures.html">LECTURES</a>
-				<a class="nav-link" href="FAQ.html">FAQS</a>
+				<a class="nav-link" href="faq.html">FAQS</a>
 				<a class="nav-link" href="contact.html">CONTACT</a>
 				<a class="nav-link" href="profile.html">PROFILE</a>
 			</div>
 		</nav>
 		<article>
-			<div class="article-header">
+			<header>
 				<img class="image-full" src="images/explore.png" alt="welcome image of person"/>
 				<div class="article-header-text">
-					<h1>START EXPLORING!<h1/>
-					<h2>Discover. Engage. Acquire.</h2>
-					<div class="overlay-boxes">
-						<div class="overlay-box-small Lectures">
-							<h3>Lectures</h3>
-						</div>
-						<div class="overlay-box-small Community">
-							<h3>Community</h3>
-						</div>
-						<div class="overlay-box-small ContactUs">
-							<h3>Contact Us</h3>
-						</div>
-					</div>
+					<h1 class="title fade-in">START EXPLORING!</h1>
+					<h2 class="subtitle fade-in">DISCOVER. ENGAGE. ACQUIRE.</h2>
 				</div>
+			</header>
+			<div class="white-space" id="header-boxes"></div>
+			<div class="boxes">
+				<a href="lectures.html" class="box-small fade-in" id="lectures">
+					<h3>Lectures</h3>
+				</a>
+				<a href="." class="box-small fade-in" id="community">
+					<h3>Community</h3>
+				</a>
+				<a href="contact.html" class="box-small fade-in" id="contact-us">
+					<h3>Contact Us</h3>
+				</a>
 			</div>
 		</article>
+		<div class="white-space" id="article-footer"></div>
 		<footer>
 		</footer>
 	</body>
