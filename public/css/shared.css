@@ -52,6 +52,12 @@ h4 {
   margin-bottom: 30px;
 }
 
+h5 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18pt;
+}
+
 h6 {
   color: white;
   font-size: 21pt;

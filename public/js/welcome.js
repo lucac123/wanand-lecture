@@ -43,6 +43,18 @@ $(() => {
 	$(document).scroll(() => {
 		let scroll = $(this).scrollTop();
 
+		if (scroll < 700) {
+			let blur = scroll/150;
+			$('.image-full').css({
+				'visibility': 'visible',
+				'filter': `brightness(78%) blur(${blur}px)`
+			})
+		}
+		else
+			$('.image-full').css({
+				'visibility': 'hidden'
+			})
+
 		let about_offset = about.offset().top-about.outerHeight()-$(window).height();
 
 		let review_offset = reviews.offset().top-reviews.outerHeight()-$(window).height();

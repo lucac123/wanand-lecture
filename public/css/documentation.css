@@ -1,44 +1,21 @@
-.overlay-boxes {
-  display: flex;
-  width: auto;
-  justify-content: center;
+.image-full {
+  height: 510px;
 }
 
-.overlay-box-small {
-  background-color: grey;
-  display: inline-block;
-  width: 430px;
-  padding: 60px 0;
+.article-header-text {
+  height: 450px;
+}
+
+.title {
   text-align: center;
+  line-height: 450px;
 }
 
-.overlay-box-dark {
-  background-color: #323135f0;
+.content {
+  background-color: white;
+  padding: 60px 130px;
 }
 
-.overlay-box-light {
-  background-color: #5f5d63f0;
-}
-
-.resourcesUsed {
-  margin-bottom: 158px;
-  margin-top: 41px;
-  padding: 0px 0px 118px 189px;
-  font-size: 24px;
-  color: rgb(0, 0, 0);
-  height: 140px;
-}
-
-.blackbox {
-  margin-top: 158px;
-  padding: -5px 0px 0px 0px;
-  height: 82px;
-  width: 100%;
-  background-color: rgb(32, 31, 35);
-  display: inline-block;
-}
-
-.images {
-  margin-top: 82px;
+.photo-perms {
   text-align: center;
 }
