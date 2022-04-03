@@ -22,6 +22,52 @@ nav {
   justify-content: space-between;
 }
 
+footer {
+  height: 80px;
+  background-color: #323135;
+}
+
+h1 {
+  margin: 0;
+  font-size: 58pt;
+  padding: 170px 0 110px 110px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28pt;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 35pt;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 30pt;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+h6 {
+  color: white;
+  font-size: 21pt;
+  font-weight: 400;
+  line-height: 32pt;
+  margin: 0;
+}
+
+p {
+  margin: 3px 0;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
 .logo-main {
   height: 43px;
   margin-left: 125px;
@@ -30,14 +76,25 @@ nav {
 
 .links {
   margin-right: 80px;
+  height: 100%;
 }
 
 .nav-link {
-  padding: 0 40px 0 40px;
+  display: inline-block;
+  padding: 0 40px;
+  line-height: 60px;
+  height: 100%;
+  vertical-align: middle;
 }
 
-.article-header {
+.nav-link:hover {
+  background-color: rgb(241, 241, 241);
+}
+
+.white-space {
+  background-color: white;
   position: relative;
+  z-index: -1;
 }
 
 .image-full {
@@ -55,17 +112,6 @@ nav {
   width: 100%;
 }
 
-h1 {
-  margin: 0;
-  font-size: 58pt;
-  padding: 170px 0 110px 110px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.fade-in {
-  opacity: 0;
-}
-
 .overlay-boxes {
   display: flex;
   width: auto;
@@ -73,37 +119,10 @@ h1 {
 }
 
 .overlay-box-small {
-  background-color: grey;
   display: inline-block;
   width: 430px;
   padding: 60px 0;
   text-align: center;
-}
-
-.overlay-box-dark {
-  background-color: #323135f0;
-}
-
-.overlay-box-light {
-  background-color: #5f5d63f0;
-}
-
-h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 35pt;
-}
-
-p {
-  margin: 3px 0;
-  font-size: 14pt;
-  font-weight: bold;
-}
-
-.white-space {
-  background-color: white;
-  position: relative;
-  z-index: -1;
 }
 
 #header-about {
@@ -143,24 +162,12 @@ p {
 }
 .box-light {
   background-color: #5f5d63;
-  padding: 60px 100px;
 }
 .box-dark {
   background-color: #323135;
 }
-
-h2 {
-  text-align: center;
-  font-size: 28pt;
-  margin: 0;
-}
-
-h6 {
-  color: white;
-  font-size: 21pt;
-  font-weight: 400;
-  line-height: 32pt;
-  margin: 0;
+.about-right > .box {
+  padding: 60px 100px;
 }
 
 #review-header {
@@ -235,13 +242,6 @@ hr {
   filter: brightness(78%);
 }
 
-h4 {
-  font-weight: 400;
-  font-size: 30pt;
-  margin: 0;
-  margin-bottom: 30px;
-}
-
 .review {
   text-align: center;
 }
@@ -253,7 +253,6 @@ h4 {
   height: 250px;
 }
 
-footer {
-  height: 80px;
-  background-color: #323135;
+.fade-in {
+  opacity: 0;
 }
