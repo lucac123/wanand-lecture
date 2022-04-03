@@ -27,7 +27,7 @@
   background-size: cover;
 }
 
-#community {
+#faq {
   background: rgba(0, 0, 0, 0.38);
   background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),
     url("../images/community.png");
