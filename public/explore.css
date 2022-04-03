@@ -1,111 +1,112 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Oswald", sans-serif;
-    margin: 0;
-  }
-  
-  nav {
-    display: flex;
-    margin: 0;
-    height: 60px;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .logo-main {
-    height: 43px;
-    margin-left: 125px;
-    padding-top: 5px;
-  }
-  
-  .links {
-    margin-right: 80px;
-  }
-  
-  .nav-link {
-    padding: 0 40px 0 40px;
-  }
-  
-  .article-header {
-    position: relative;
-  }
-  
-  .image-full {
-    width: 100%;
-    height: 790px;
-    object-fit: cover;
-    filter: brightness(78%);
-  }
-  
-  .article-header-text {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    color: white;
-    width: 100%;
-  }
-  
-  h1 {
-    margin: 0;
-    font-size: 58pt;
-    padding: 170px 0 110px 110px;
-  }
-  
-  .overlay-boxes {
-    display: flex;
-    width: auto;
-    margin-top: 468px;
-    margin-bottom: 218;
-    justify-content: center;
-    background-color: rgb(0, 0, 0);
-  }
-  
-  .overlay-box-small {
-    display: block;
-    width: 34%;
-    padding: 145px 0px 145px 0px;
-    text-align: center;
+  box-sizing: border-box;
+}
 
-  }
-  
-  .Lectures {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("images/lecturepicture.png");
-  }
-  
-  .Community {
-    background: rgba(0, 0, 0, 0.38);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("images/community.png");
-  }
+body {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+}
 
-  .ContactUs {
-    background: rgba(0, 0, 0, 0.38);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("images/contactus.png");
-  }
+nav {
+  display: flex;
+  margin: 0;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .blackbox {
-      background-color: black;
-      width: 100%;
-      height: 82px;
-  }
-  
-  h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 35pt;
-  }
-  h4 {
-    margin: 0;
-    padding: 0;
-    font-size: 35pt;
-    color: black;
-  }
-  
-  p {
-    margin: 3px 0;
-    font-size: 14pt;
-    font-weight: bold;
-  }
-  
+.logo-main {
+  height: 43px;
+  margin-left: 125px;
+  padding-top: 5px;
+}
+
+.links {
+  margin-right: 80px;
+}
+
+.nav-link {
+  padding: 0 40px 0 40px;
+}
+
+.article-header {
+  position: relative;
+}
+
+.image-full {
+  width: 100%;
+  height: 790px;
+  object-fit: cover;
+  filter: brightness(78%);
+}
+
+.article-header-text {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  color: white;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 58pt;
+  padding: 170px 0 110px 110px;
+}
+
+.overlay-boxes {
+  display: flex;
+  width: auto;
+  margin-top: 468px;
+  margin-bottom: 218;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.overlay-box-small {
+  display: block;
+  width: 34%;
+  padding: 145px 0px 145px 0px;
+  text-align: center;
+}
+
+.Lectures {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("images/lecturepicture.png");
+}
+
+.Community {
+  background: rgba(0, 0, 0, 0.38);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("images/community.png");
+}
+
+.ContactUs {
+  background: rgba(0, 0, 0, 0.38);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("images/contactus.png");
+}
+
+.blackbox {
+  background-color: black;
+  width: 100%;
+  height: 82px;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 35pt;
+}
+h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 35pt;
+  color: black;
+}
+
+p {
+  margin: 3px 0;
+  font-size: 14pt;
+  font-weight: bold;
+}
