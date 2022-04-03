@@ -44,10 +44,10 @@ $(() => {
 		let scroll = $(this).scrollTop();
 
 		if (scroll < 700) {
-			let blur = scroll/150;
+			let brightness = 78-scroll/17;
 			$('.image-full').css({
 				'visibility': 'visible',
-				'filter': `brightness(78%) blur(${blur}px)`
+				'filter': `brightness(${brightness}%)`
 			})
 		}
 		else
