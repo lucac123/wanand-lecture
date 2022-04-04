@@ -3,6 +3,8 @@ $(() => {
 	$('.fade-in.subtitle').animate({opacity: 1}, 3500);
 
 	let boxes = $('.boxes > .fade-in');
+	
+	let offset = boxes.offset().top+boxes.outerHeight()-$(window).height();
 
 	$(document).scroll(() => {
 		let scroll = $(this).scrollTop();
@@ -15,7 +17,6 @@ $(() => {
 			})
 		}
 
-		let offset = boxes.offset().top+boxes.outerHeight()-$(window).height();
 
 		if (scroll > offset)
 			if (boxes.css('opacity') == '0')

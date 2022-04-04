@@ -1,3 +1,15 @@
 .fade-in {
   opacity: 0;
 }
+
+.grow-in {
+  width: 0;
+}
+
+.slide-from-left {
+  opacity: 0;
+}
+
+.slide-from-right {
+  opacity: 0;
+}

@@ -12,8 +12,7 @@ $(() => {
 		let width = $(this).outerWidth();
 		$(this).css({
 			'width': width,
-			'margin-left': -1*width,
-			'opacity': 0
+			'margin-left': -1*width
 		});
 	});
 
@@ -23,6 +22,10 @@ $(() => {
 	let copywrite = $('.copywrite.slide-from-left');
 	let worklog = $('.worklog.slide-from-left');
 	let sources = $('.resources.slide-from-left');
+	
+	let copy_offset = copywrite.offset().top+copywrite.outerHeight()/2-$(window).height();
+	let work_offset = worklog.offset().top+worklog.outerHeight()/2-$(window).height();
+	let source_offset = sources.offset().top+sources.outerHeight()/2-$(window).height();
 
 	$(document).scroll(() => {
 		let scroll = $(this).scrollTop();
@@ -34,9 +37,6 @@ $(() => {
 			});
 		}
 
-		let copy_offset = copywrite.offset().top+copywrite.outerHeight()/2-$(window).height();
-		let work_offset = worklog.offset().top+worklog.outerHeight()/2-$(window).height();
-		let source_offset = sources.offset().top+sources.outerHeight()/2-$(window).height();
 
 		if (photo_perm.css('opacity') == '0')
 			photo_perm.animate(fade_in, 1000);

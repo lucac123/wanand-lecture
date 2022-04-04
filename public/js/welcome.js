@@ -8,25 +8,21 @@ let fade_in = {
 };
 
 $(() => {
-	(() => {
-		$('.slide-from-left').each(function() {
-			let width = $(this).outerWidth();
-			$(this).css({
-				'width': width,
-				'margin-left': -1*width,
-				'opacity': 0
-			});
+	$('.slide-from-left').each(function() {
+		let width = $(this).outerWidth();
+		$(this).css({
+			'width': width,
+			'margin-left': -1*width
 		});
-		$('.slide-from-right').each(function() {
-			let width = $(this).outerWidth();
-			let margin = width + $(this).css('margin-left');
-			$(this).css({
-				'width': width,
-				'margin-left': margin,
-				'opacity': 0
-			});
+	});
+	$('.slide-from-right').each(function() {
+		let width = $(this).outerWidth();
+		let margin = width + $(this).css('margin-left');
+		$(this).css({
+			'width': width,
+			'margin-left': margin
 		});
-	})();
+	});
 
 	$('.fade-in.title').animate(fade_in, 2500);
 	let overlay_boxes = $('.overlay-boxes');
@@ -43,6 +39,12 @@ $(() => {
 	let reviews = $('.reviews-right .review:first');
 	let about = $('.box.slide-from-right > h6:first');
 
+	let about_offset = about.offset().top-about.outerHeight()-$(window).height();
+
+	let review_offset = reviews.offset().top-reviews.outerHeight()-$(window).height();
+
+	let review_offset_low = review_left.offset().top-review_left.outerHeight()-$(window).height();
+
 	$(document).scroll(() => {
 		let scroll = $(this).scrollTop();
 
@@ -58,11 +60,6 @@ $(() => {
 				'visibility': 'hidden'
 			})
 
-		let about_offset = about.offset().top-about.outerHeight()-$(window).height();
-
-		let review_offset = reviews.offset().top-reviews.outerHeight()-$(window).height();
-
-		let review_offset_low = review_left.offset().top-review_left.outerHeight()-$(window).height();
 
 		if (overlay_boxes.css('opacity') == '0')
 			overlay_boxes.animate(fade_in, 1000);
