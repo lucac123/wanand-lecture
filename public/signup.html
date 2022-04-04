@@ -8,28 +8,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/shared.css">
-    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
-    <div class="background">
-        <img class="image-full" src="images/background.png" alt="background image">
-        <div class="form-box">
-            <form id="signup" method="POST">
-                <h1>Sign Up</h1>
-                <p style="margin-top: -10px; margin-bottom: 21px;">Register to view lectures</p>
-                <p>Enter your first and last name</p>
-                <input type="text" id="name" name="name" required><br>
-                <p>Enter your email</p>
-                <input type="text" id="email" name="email" required><br>
-                <p>Set your password</p>
-                <input type="password" id="password" name="password" required><br>
-                <!--make button work aka save data and redirect user to the start exploring page-->
-                <button type="submit">Sign Up</button>
-                <!--need link to work-->
-                <a class="links" href="index.html" style="text-decoration:none; color: black;">Back</a>
-            </form>
-        </div>
+    <img class="image-full" src="images/background.png" alt="its a bacgkroundd"/>
+	<div class="form-box">
+		<form id="login" method="POST">
+			<h2>Sign Up</h1>
+			<p>Register to see your lectures.</p>
+			<p>Enter your full name</p>
+			<input type="text" class="input-box" id="name" name="name" required><br>
+			<p>Set your username</p>
+			<input type="text" class="input-box" id="username" name="username" required><br>
+			<p>Set your password</p>
+			<input type="password" class="input-box" id="password" name="password" required><br>
+			<button type="submit">Sign Up</button>
+			<a class="login-links" href="login.html">Log in</a>
+			<a class="login-links" href=".">Back</a>
+		</form>
     </div>
 </body>
 
