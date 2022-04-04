@@ -1,0 +1,81 @@
+html {
+  height: 100%;
+}
+
+h3 {
+  font-size: 40pt;
+}
+p {
+  font-weight: 400;
+  font-size: 15pt;
+}
+
+hr {
+  margin-top: 60px;
+  margin-bottom: 35px;
+  border-top-width: 3px;
+  width: 100%;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  gap: 50px;
+  padding-left: 115px;
+  margin-top: 50px;
+}
+.grid-item-right {
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 9px;
+  margin-top: 9px;
+}
+
+.small-textbox {
+  width: 85%;
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid;
+  font-family: "Oswald", sans-serif;
+}
+.big-textbox {
+  width: 85%;
+  height: 150px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: 1px solid;
+  font-family: "Oswald", sans-serif;
+  vertical-align: top;
+}
+
+button {
+  color: white;
+  background: #323135;
+  border-style: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  font-family: "Oswald", sans-serif;
+  font-size: 10pt;
+}
+
+.abed-img {
+  float: right;
+}
+
+.img-text {
+  position: absolute;
+  top: 64px;
+  left: 65px;
+  background-color: #5f5d63;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  height: 100px;
+  width: 500px;
+  padding: 20px 0;
+}
