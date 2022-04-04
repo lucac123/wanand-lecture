@@ -3,6 +3,9 @@ let slide_in = {
 	marginLeft: 0,
 	opacity: 1
 };
+let fade_in = {
+	opacity: 1
+};
 
 $(() => {
 	(() => {
@@ -25,7 +28,7 @@ $(() => {
 		});
 	})();
 
-	$('.fade-in.title').animate({opacity: 1}, 2500);
+	$('.fade-in.title').animate(fade_in, 2500);
 	let overlay_boxes = $('.overlay-boxes');
 	let box_left = $('.box.slide-from-left');
 	let about_title = $('.slide-from-right#about-title')
@@ -62,7 +65,7 @@ $(() => {
 		let review_offset_low = review_left.offset().top-review_left.outerHeight()-$(window).height();
 
 		if (overlay_boxes.css('opacity') == '0')
-			overlay_boxes.animate({opacity: 1}, 1000);
+			overlay_boxes.animate(fade_in, 1000);
 
 		if (scroll > about_offset) {
 			if (about_title.css('opacity') == '0') {

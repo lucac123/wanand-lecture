@@ -7,6 +7,14 @@ $(() => {
 	$(document).scroll(() => {
 		let scroll = $(this).scrollTop();
 
+		if (scroll < 700) {
+			let brightness = 78-scroll/17;
+			$('.image-full').css({
+				'visibility': 'visible',
+				'filter': `brightness(${brightness}%)`
+			})
+		}
+
 		let offset = boxes.offset().top+boxes.outerHeight()-$(window).height();
 
 		if (scroll > offset)
