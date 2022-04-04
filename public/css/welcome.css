@@ -60,15 +60,6 @@
   padding-right: 25px;
 }
 
-hr {
-  border-top: 5px solid black;
-  width: 70%;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .small-button {
   display: flex;
   background-color: #323135;
