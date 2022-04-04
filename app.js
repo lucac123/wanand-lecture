@@ -5,6 +5,7 @@ const http = require('http');
 const server = http.createServer(app);
 const bodyParser = require('body-parser');
 const sessions = require('express-session');
+const crypto = require('crypto');
 
 const firebase = require("firebase");
 // Required for side-effects
@@ -52,32 +53,56 @@ app.get('/', (req, res) => {
 })
 
 app.post('/login.html', (req, res) => {
+	let hash = crypto.createHash('sha512').update(req.body.password, 'utf-8').digest('hex');
 	db.collection('users').get()
 	.then((q) => {
 		q.forEach((doc) => {
 			if (doc.data().username == req.body.username) {
-				if (doc.data().pass == req.body.password) {
+				if (doc.data().pass == hash) {
 					req.session.user = true;
 				}
 			}
 		})
-		res.redirect('/');
+	})
+	.then(() => {
+		if (req.session.user) {
+			res.redirect('/');
+		}
+		else {
+			res.redirect('/login.html?err');
+		}
 	})
 	.catch((e) => console.error(`Error: ${e}`));
 })
 app.post('/signup.html', (req, res) => {
-	db.collection('users').add({
-		name: req.body.name,
-		username: req.body.username,
-		pass: req.body.password
+	let hash = crypto.createHash('sha512').update(req.body.password, 'utf-8').digest('hex');
+
+	let exists = false;
+	db.collection('users').get()
+	.then((q) => {
+		q.forEach((doc) => {
+			if (doc.data().username == req.body.username)
+				exists = true;
+		})
 	})
 	.then(() => {
-		req.session.user = true;
-		res.redirect('/');		
+		if (!exists) {
+			db.collection('users').add({
+				name: req.body.name,
+				username: req.body.username,
+				pass: hash
+			})
+			.then(() => {
+				req.session.user = true;
+				res.redirect('/');		
+			})
+			.catch((e) => console.error(`Error: ${e}`));
+		}
+		else {
+			res.redirect('/signup.html?err')
+		}
 	})
-	.catch((e) => console.error(`Error: ${e}`));
-
-})
+});
 
 app.get('/logout', (req, res) => {
 	req.session.user = false;
@@ -86,7 +111,7 @@ app.get('/logout', (req, res) => {
 
 app.get('/*', (req, res) => {
 	let view = (req.session.user)? user_dir : public_dir;
-	res.sendFile(path.join(view, req.url));
+	res.sendFile(path.join(view, req.url.split('?')[0]));
 });
 
 server.listen(port, () => console.log(`Server started on port ${port}`));
