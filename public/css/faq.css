@@ -57,3 +57,29 @@ hr {
   width: 48px;
   right: 0;
 }
+
+footer {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  column-gap: 100px;
+  height: 250px;
+}
+
+.footer-text {
+  color: white;
+}
+
+p.footer-text {
+  font-size: 22pt;
+  font-weight: 400;
+}
+
+#footer-left {
+  text-align: right;
+  padding-top: 50px;
+}
+
+#footer-right {
+  padding-top: 50px;
+  padding-right: 250px;
+}
