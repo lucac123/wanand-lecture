@@ -42,13 +42,13 @@ label {
   font-family: "Oswald", sans-serif;
 }
 .big-textbox {
+  display: block;
   width: 85%;
   height: 150px;
   margin-bottom: 30px;
   border-radius: 5px;
   border: 1px solid;
   font-family: "Oswald", sans-serif;
-  vertical-align: top;
 }
 
 button {
@@ -60,10 +60,15 @@ button {
   height: 40px;
   font-family: "Oswald", sans-serif;
   font-size: 10pt;
+  cursor: pointer;
 }
 
-.abed-img {
+.image {
   float: right;
+  width: 85%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(78%);
 }
 
 .img-text {
@@ -78,4 +83,8 @@ button {
   height: 100px;
   width: 500px;
   padding: 20px 0;
+}
+
+footer {
+  margin-top: 200px;
 }
