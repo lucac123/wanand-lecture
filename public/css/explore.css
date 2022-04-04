@@ -28,14 +28,12 @@
 }
 
 #faq {
-  background: rgba(0, 0, 0, 0.38);
   background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),
     url("../images/community.png");
   background-size: cover;
 }
 
 #contact-us {
-  background: rgba(0, 0, 0, 0.38);
   background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),
     url("../images/contactus.png");
   background-size: cover;

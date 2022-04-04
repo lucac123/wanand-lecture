@@ -1,81 +1,61 @@
-*{
-    box-sizing: border-box;
+html {
+  height: 100%;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-body{
-    font-family: "Oswald", sans-serif;
-    margin: 0;
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.background{
-    display: grid;
-    height: 100%
-}
-.image-full{
-    width:100%;
-    max-height:100vh;
-    margin: auto;
-    filter: brightness(70%);
+h2 {
+  font-size: 22pt;
 }
 
-.form-box{
-    width: 440px;
-    height: 380px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -220px;
-    margin-top: -190px;
-    background-color: white ;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-radius: 40px;
+p {
+  font-weight: 400;
+  font-size: 12pt;
+  margin-bottom: 5px;
 }
 
-#email{
-    border-width: 1.3px;
-    border-radius: 5px;
-    height: 30px;
-    width: 330px;
-    font-size: 11pt;
-    padding-left: 7px;
+.image-full {
+  height: 100%;
 }
 
-#password{
-    border-width: 1.3px;
-    border-radius: 5px;
-    height: 30px;
-    width: 330px;
-    font-size: 11pt;
-    padding-left: 7px;
+.form-box {
+  width: 30%;
+  background-color: white;
+  padding: 30px 50px;
+  border-radius: 40px;
 }
 
-p{
-    font-size: 10pt;
-    padding-bottom: 0;
+.input-box {
+  border-width: 1.5px;
+  border-radius: 10px;
+  height: 45px;
+  width: 100%;
+  font-size: 11pt;
+  padding-left: 7px;
+  margin-bottom: 12px;
 }
 
-.links{
-    font-size: 10pt;
-    padding-top: 4px;
-    padding-right: 20px;
+.login-links {
+  font-size: 10pt;
+  padding-top: 4px;
+  padding-right: 20px;
 }
 
-button{
-    border-radius: 7px;
-    margin-top: 25px;
-    width: 100px;
-    height: 35px;
-    background-color: #323135;
-    color: white;
-    font-family: "Oswald", sans-serif;
-    margin-right: 20px;
-    cursor: pointer;
+button {
+  border-radius: 7px;
+  width: 100px;
+  height: 35px;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #323135;
+  color: white;
+  font-family: inherit;
+  font-size: 12pt;
+  cursor: pointer;
 }
