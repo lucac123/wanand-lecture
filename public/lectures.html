@@ -8,6 +8,10 @@
 		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/shared.css"/>
 		<link rel="stylesheet" href="css/lectures.css"/>
+		<link rel="stylesheet" href="css/animations.css"/>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/lectures.js"></script>
 	</head>
 	<body>
 		<nav>
@@ -15,100 +19,30 @@
 
 			<div class="links">
 				<a class="nav-link" href="documentation.html">DOCUMENTATION</a>
+				<a class="nav-link" href="lectures.html">LECTURES</a>
 				<a class="nav-link" href="faq.html">FAQS</a>
 				<a class="nav-link" href="contact.html">CONTACT</a>
-				<a class="nav-link" href="login.html">LOG IN</a>
+				<!-- <a class="nav-link" href="profile.html">PROFILE</a> -->
 			</div>
 		</nav>
 		<article>
-			<div class="article-header">
+			<header>
 				<div class="article-header-text">
-					<h1>Our Lectures</h1>
-                    <h2>Browse through the topics we offer.</h2>
-
-                    <div class = "line">
-                        <h3>
-                            asdf
-                        </h3>
-                    </div>
-                    <div class = "subjectScience">
-                        <h4>
-                            Subject 1 of 2
-                        </h4>
-                    </div>
-					<div class="overlay-boxes">
-						<div class="overlay-box-small overlay-box-dark">
-							<h5>Science</h5>
-						</div>
-						<div class="overlay-box-small overlay-box-light">
-							<h5>Technology</h5>
-						</div>
-					</div>
-
-                    <div class = "lectureOptions">
-                        <div class = "heading">
-                            <h6>
-                                How do Stem Cells relate to Heart Failure? 
-                            </h6>
-                        </div>
-                        <div class = "addButton">
-                            <h7>
-                                Add
-                            </h7>
-                        </div>
-                        <div class = "discription">
-                            <h8>
-                                Ischemic heart disease(IHD) has become the number one leading cause of death globally. In recent decades, the use of stem cell transplantation has shown promising results in the treatment of IHD. Join this lecture to learn the in depth process of stem cell experiments. 
-                            </h8>
-                        </div>
-                        <div class = "heading">
-                            <h6>
-
-                            </h6>
-                        </div>
-                        <div class = "addButton">
-                            <h7>
-
-                            </h7>
-                        </div>
-                        <div class = "discription">
-                            <h8>
-
-                            </h8>
-                        </div>
-                        <div class = "heading">
-
-                        </div>
-                        <div class = "addButton">
-
-                        </div>
-                        <div class = "discription">
-                            
-                        </div>
-                        <div class = "heading">
-
-                        </div>
-                        <div class = "addButton">
-
-                        </div>
-                        <div class = "discription">
-                            
-                        </div>
-                        <div class = "heading">
-
-                        </div>
-                        <div class = "addButton">
-
-                        </div>
-                        <div class = "discription">
-                            
-                        </div>
-                    </div>
+					<h3 class="title fade-in">OUR LECTURES</h3>
+                    <p class="subtitle fade-in">Browse through the topics we offer.</p>
+					<hr class="grow-in"/>
 				</div>
+			</header>
+			<div class="subject fade-in">
+				<p>Subject <span id="subject-num">1</span> of 2</p>
+				<div class="large-button" id="science-button">Science</div>
+				<div class="large-button" id="tech-button">Technology</div>
 			</div>
-			<div class="article-about">
-				<div class="about-left"></div>
+			<div class="content">
+				
 			</div>
 		</article>
+		<footer>
+		</footer>
 	</body>
 </html>

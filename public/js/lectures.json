@@ -1,0 +1,56 @@
+{
+	"science": [
+		{
+			"title": "How do Stem Cells relate to Heart Failure?",
+			"description": "Ischemic heart disease(IHD) has become the number one leading cause of death globally. In recent decades, the use of stem cell transplantation has shown promising results in the treatment of IHD. Join this lecture to learn the in depth process of stem cell experiments.",
+			"details": "Details: June 20, 2022 at 10AM CT"
+		},
+		{
+			"title": "Algorithms of Astrophysics",
+			"description": "Astrophysics is a branch of space science that applies the laws of physics and chemistry to understand the universe. In this lecture, we will explore topics suchas as the creation, life and death of stars, planets, galaxies and other things in the universe.",
+			"details": "Details: June 22, 2022 at 10AM CT"
+		},
+		{
+			"title": "Incorporation of Gold Nanoparticles in Medicine",
+			"description": "Gold nanoparticles are being investigated as cancer therapy agents, drug carriers , and radiosensitisers. This lectures reviews the various aspects of gold nanoparticle research and its potential applications in cancer therapy.",
+			"details": "Details: June 24, 2022 at 10AM CT"
+		},
+		{
+			"title": "Carbon Capture and Sequestration Process",
+			"description": "Carbon sequestration is a method of reducing greenhouse gas emissions. It is compatible with the existing energy infrastructure and is expected to contribute to a reduction in greenhouse gas emissions. Join this session to learn more about the process.",
+			"details": "Details: June 27, 2022 at 10AM CT"
+		},
+		{
+			"title": "Increasing the use of Biodegradable Plastics",
+			"description": "Biodegradable plastics are a more innovative and sustainable solution compared to conventional plastics. They are a cheaper alternative to disposal and recycling, which lessen the stress on existing waste systems and the environement. Join this lecture to learn more about the applications of biodegradable plastics in many industries.",
+			"details": "Details: June 29, 2022 at 10AM CT"
+		}
+	],
+	"tech": [
+		{
+			"title": "Implementations of 5G Technology in Medicine",
+			"description": "5G opens new opportunities for technologies that allow patients to better connect to their healthcare providers. Some of the innovations include remote monitoring, sensors, and large database collectors. Join this lecture to help brainstorm more potential usage of 5G technology in medicine.",
+			"details": "Details: July 1, 2022 at 10AM CT"
+		},
+		{
+			"title": "Is Augmented Reality the Future?",
+			"description": "Augmented reality is enhancing a view of physical world by using computer generated input. These inputs could be in forms like sound, video, GPS overlays and more. The first appearance of augmented reality is in a book by Frank L. Baum written in 1901 where a set of electronic glasses mapped data onto people. But today, augmented reality is real and not a science-fiction concept.",
+			"details": "Details: July 3, 2022 at 10AM CT"
+		},
+		{
+			"title": "Biometric Technology: Unique Industry with Unique Risks",
+			"description": "Biometrics are taking people’s unique physical and behavioral characters and analyzing it. The technology is used for identification and access control of individuals who are being surveyed. Join this lecture to learn about how every person can be identified by their physical and behavioral traits.",
+			"details": "Details: July 6, 2022 at 10AM CT"
+		},
+		{
+			"title": "Medical 3D Printing",
+			"description": "The medical industry has been enhanced through the use of 3D printers. From the development of new surgical cutting, prosthetics to replicas of bones and organs, 3D printing makes it possible for medical professionals to provide patients with new forms of treatments. Join this lecture to learn about how 3D printing is advancing the medial field.",
+			"details": "Details: July 8, 2022 at 10AM CT"
+		},
+		{
+			"title": "How Do Nanorobots Combat HIV?",
+			"description": "Currently, there is no cure for HIV/AIDS, but nanotechnology is an emerging field that is revolutionizing medicine today. It has the potential to advance the treatment and prevention of HIV/AIDS. In this lecture, we will discuss ways nanotechnology can revolutionize the medical field.",
+			"details": "Details: July 10, 2022 at 10AM CT"
+		}
+	]
+}
