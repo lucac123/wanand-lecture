@@ -109,6 +109,10 @@ app.get('/logout', (req, res) => {
 	res.redirect('/');
 })
 
+app.get('/favicon.ico', (req, res) => {
+	res.sendFile(path.join(server_dir, 'images', 'logo_white.png'));
+});
+
 app.get('/*', (req, res) => {
 	let view = (req.session.user)? user_dir : public_dir;
 	res.sendFile(path.join(view, req.url.split('?')[0]));
